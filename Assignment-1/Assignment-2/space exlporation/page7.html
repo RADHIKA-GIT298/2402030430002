@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Exploration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c1445;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    background:gray ;
+    color:whitesmoke;
+    border-radius: 5px;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hero-content {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero-content button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+.hero-content button:hover{
+    background-color: beige;
+    transform: scale(1.1);
+    box-shadow:0px 4px 10px rgba(0,0,0,0.3) ;
+}
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #07102d;
+    text-align: center;
+}
+footer nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+    }
+}
+
+</style>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\download.jfif" alt="Logo">
+        </div>
+        <label for="menu-toggle"
+        class="nav"></label>
+        <nav>
+            <ul>
+                <li><a href="home..html">Go back</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Get in touch with us</h1>
+            <a href="mailto:radhikat671@gmail.com">
+                <button>Mail Us</button>
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\contact.jfif" alt="People Using VR">
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; 2025 Your Company. All rights reserved.
+            </p>
+    </footer>
+
+</body>
+</html>
+

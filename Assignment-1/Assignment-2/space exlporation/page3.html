@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-size: cover;
+            background-position: center;
+            color:white(17, 11, 56);
+            text-align: center;
+            padding: 20px;
+            background-color: #033751;
+        }
+   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black(0, 0, 0, 0.7)
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+.next-button{
+    display: flex-end;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: aliceblue;
+    background: #007bff;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.next-button:hover{
+    background-color: rgb(4, 30, 53);
+    transform: scale(1.1);
+}
+.quiz-container {
+     max-width: 600px;
+     margin: auto;
+     background: whitesmoke;
+     padding: 20px;
+     border-radius: 10px;
+ }
+ h1 {
+    margin-bottom: 20px;
+ }
+.question {
+     margin: 20px 0;
+     font-size: 18px;
+ }
+.options label {
+     display: block;
+     background: #7e858b;
+     padding: 10px;
+     margin: 5px;
+     border-radius: 5px;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+.options label:hover {
+     background: #444;
+ }
+input[type="radio"] {
+     display: none;
+  }
+input[type="radio"]:checked + label {
+    background: #28a745; 
+    color: white;
+        }
+ input[type="radio"]:not(:checked) + label.wrong {
+            pointer-events: none;
+            background: #7e858b; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\download.jfif" alt="Logo">
+        </div>
+        <div> 
+            <a href="page4.html" class="next-button">Next</a></p>
+        </div>
+    </header>
+       
+    </header>
+    <div class="quiz-container">
+        <h1>Planet Quiz</h1>
+
+       
+        <div class="question">
+            <p>1. Which planet is known as the Red Planet?</p>
+            <div class="options">
+                <input type="radio" id="q1a1" name="q1">
+                <label for="q1a1" class="wrong">Earth</label>
+
+                <input type="radio" id="q1a2" name="q1">
+                <label for="q1a2">Mars</label> 
+
+                <input type="radio" id="q1a3" name="q1">
+                <label for="q1a3" class="wrong">Jupiter</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>2. Which planet is the largest in our solar system?</p>
+            <div class="options">
+                <input type="radio" id="q2a1" name="q2">
+                <label for="q2a1" class="wrong">Saturn</label>
+
+                <input type="radio" id="q2a2" name="q2">
+                <label for="q2a2">Jupiter</label> 
+
+                <input type="radio" id="q2a3" name="q2">
+                <label for="q2a3" class="wrong">Neptune</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>3. Which planet is closest to the Sun?</p>
+            <div class="options">
+                <input type="radio" id="q3a1" name="q3">
+                <label for="q3a1">Mercury</label> 
+
+                <input type="radio" id="q3a2" name="q3">
+                <label for="q3a2" class="wrong">Venus</label>
+
+                <input type="radio" id="q3a3" name="q3">
+                <label for="q3a3" class="wrong">Earth</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>4. Which planet has the most rings?</p>
+            <div class="options">
+                <input type="radio" id="q4a1" name="q4">
+                <label for="q4a1" class="wrong">Jupiter</label>
+
+                <input type="radio" id="q4a2" name="q4">
+                <label for="q4a2">Saturn</label> 
+
+                <input type="radio" id="q4a3" name="q4">
+                <label for="q4a3" class="wrong">Uranus</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>5. Which planet has the strongest winds?</p>
+            <div class="options">
+                <input type="radio" id="q5a1" name="q5">
+                <label for="q5a1" class="wrong">Jupiter</label>
+
+                <input type="radio" id="q5a2" name="q5">
+                <label for="q5a2" class="wrong">Saturn</label>
+
+                <input type="radio" id="q5a3" name="q5">
+                <label for="q5a3">Neptune</label> 
+            </div>
+        </div>
+        <div class="question">
+            <p>6. Which planet is known as Earth's twin?</p>
+            <div class="options">
+                <input type="radio" id="q6a1" name="q6">
+                <label for="q6a1" class="wrong">Mars</label>
+
+                <input type="radio" id="q6a2" name="q6">
+                <label for="q6a2">Venus</label>
+
+                <input type="radio" id="q6a3" name="q6">
+                <label for="q6a3" class="wrong">Mercury</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>7. Which planet has the most moons?</p>
+            <div class="options">
+                <input type="radio" id="q7a1" name="q7">
+                <label for="q7a1" class="wrong">Neptune</label>
+
+                <input type="radio" id="q7a2" name="q7">
+                <label for="q7a2">Saturn</label> 
+
+                <input type="radio" id="q7a3" name="q7">
+                <label for="q7a3" class="wrong">Jupiter</label>
+            </div>
+        </div>
+        <div class="question">
+            <p>8. Which planet has the Great Red Spot?</p>
+            <div class="options">
+                <input type="radio" id="q8a1" name="q8">
+                <label for="q8a1" class="wrong">Mars</label>
+
+                <input type="radio" id="q8a2" name="q8">
+                <label for="q8a2">Jupiter</label> 
+
+                <input type="radio" id="q8a3" name="q8">
+                <label for="q8a3" class="wrong">Venus</label>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

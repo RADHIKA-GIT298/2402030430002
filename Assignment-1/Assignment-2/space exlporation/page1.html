@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black(0, 0, 0, 0.7);
+}
+
+.logo img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero .background img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    padding: 100px 20px;
+}
+.planet {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.planet img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.planet:hover .overlay {
+    opacity: 1;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+.next-button{
+    display: flex-end;
+    padding: 12px 24px;
+    font-size: 18px;
+    color: aliceblue;
+    background: #007bff;
+    border:none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.next-button:hover{
+    background-color: rgb(4, 30, 53);
+    transform: scale(1.1);
+}
+</style>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\download.jfif" alt="Logo">
+        </div>
+        <div> 
+            <a href="page2.html" class="next-button">Next</a></p>
+        </div>
+       
+    </header>
+
+    <section class="hero">
+        <div class="background">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\images.jfif" alt="Space Background">
+        </div>
+        <div class="grid-container">
+            <div class="planet">
+                <img src="C:\Users\Radhika\Desktop\New folder\space\download (5).jpg" alt="The Sun">
+                <div class="overlay">
+                    <h2>Sun</h2>
+                    <a href="https://en.wikipedia.org/wiki/Sun" class="btn" target="_blank">GUIDE</a>
+                </div>
+            </div>
+            <div class="planet">
+                <img src="C:\Users\Radhika\Desktop\New folder\space\download (1).jfif" alt="Mercury">
+                <div class="overlay">
+                    <h2>Mercury</h2>
+                    <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="btn" target="_blank">GUIDE</a>
+                </div>
+            </div>
+            <div class="planet">
+                <img src="C:\Users\Radhika\Desktop\New folder\space\download (2).jfif" alt="Venus">
+                <div class="overlay">
+                    <h2>Venus</h2>
+                    <a href="https://en.wikipedia.org/wiki/Venus" class="btn" target="_blank">GUIDE</a>
+                </div>
+            </div>
+            <div class="planet">
+                <img src="C:\Users\Radhika\Desktop\New folder\space\download (3).jfif" alt="Earth">
+                <div class="overlay">
+                    <h2>Earth</h2>
+                    <a href="https://en.wikipedia.org/wiki/Earth" class="btn" target="_blank">GUIDE</a>
+                </div>
+            </div>
+            <div class="planet">
+                <img src="C:\Users\Radhika\Desktop\New folder\space\download (4).jfif" alt="Mars">
+                <div class="overlay">
+                    <h2>Mars</h2>
+                    <a href="https://en.wikipedia.org/wiki/Mars" class="btn" target="_blank">GUIDE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 

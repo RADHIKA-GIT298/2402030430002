@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing Facts About Asteroids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('space-background.jpg') no-repeat center center/cover;
+    text-align: center;
+   background-color: #033751;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: white;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+nav a:hover{
+    background:gray ;
+    color:whitesmoke;
+    border-radius: 5px;
+}
+
+.asteroid-facts {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.fact-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.fact-box {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    color: white;
+}
+.orange {
+    background: #E67E22;
+    color: black;
+}
+
+.blue {
+    background: #1E90FF;
+    color: black;
+}
+
+.yellow {
+    background: #F1C40F;
+    color: black;
+}
+
+.dark-blue {
+    background:rgb(110, 235, 172);
+    color: black;
+}
+.title-box {
+    text-align: center;
+    background:beige;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 30px;
+    margin-bottom: 20px;
+    color: #430343;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #07102d;
+    text-align: center;
+    color: white;
+}
+
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="C:\Users\Radhika\Desktop\New folder\space\download.jfif" alt="Logo">
+        </div>
+        <label for="menu-toggle"
+        class="nav"></label>
+        <nav>
+            <ul>
+                <li><a href="home..html">Home</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Space_technology">Technology</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/List_of_ISRO_missions#:~:text=Mars%20Orbiter%20Mission%20(MOM)%2C,so%20in%20its%20first%20attempt.">Missions</a></li>
+                <li><a href="page7.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="asteroid-facts">
+        <div class="fact-box title-box">
+            <h1>7 Amazing Facts About Asteroids</h1>
+        </div>
+
+        <div class="fact-grid">
+            <div class="fact-box orange">
+                <h2>Asteroids are relics from the time the solar system was born</h2>
+                <p>Billions of years ago, when the solar system was forming, space dust and debris fused to form rocks...</p>
+            </div>
+            <div class="fact-box blue">
+                <h2>There are millions of asteroids in the solar system</h2>
+                <p>Once Jupiter formed, its gravity prevented millions of space rocks from forming more planetary bodies...</p>
+            </div>
+            <div class="fact-box yellow">
+                <h2>Some asteroids became the moons of planets</h2>
+                <p>As asteroids orbit the sun, they sometimes cross paths with planets and get pulled by gravity...</p>
+            </div>
+            <div class="fact-box dark-blue">
+                <h2>Asteroids are rich in minerals and water</h2>
+                <p>Some asteroids contain valuable metals and even water ice, making them targets for future space missions...</p>
+            </div>
+            <div class="fact-box dark-blue">
+                <h2>Asteroids can have moons, rings, and tails</h2>
+                <p>Scientists discovered that some asteroids have mini-moons, rings, or even a dusty tail due to collisions...</p>
+            </div>
+            <div class="fact-box yellow">
+                <h2>They are odd-shaped masses</h2>
+                <p>Most asteroids are irregular in shape, varying from a few meters to hundreds of kilometers across...</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            &copy; 2025 Your Company. All rights reserved.
+            </p>
+    </footer>
+</body>
+</html>
+
